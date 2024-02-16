@@ -1,0 +1,19 @@
+<form th:fragment="create" action="/contact/create" method="post">
+    <div>
+        <label for="newFirstName">First name</label>
+        <input type="text" id="newFirstName" name="firstName" required th:value="${contacts.firstName}">
+    </div>
+    <div>
+        <label for="newLastName">Last name</label>
+        <input type="text" id="newLastName" name="lastName" required th:value="${contacts.lastName}">
+    </div>
+    <div>
+        <label for="newEmail">Email</label>
+        <input type="text" id="newEmail" name="email" required th:value="${contacts.email}">
+    </div>
+    <div>
+        <label for="newPhone">Phone</label>
+        <input type="text" id="newPhone" name="phone" required th:value="${contacts.phone}">
+    </div>
+    <button type="submit">Create</button>
+</form>

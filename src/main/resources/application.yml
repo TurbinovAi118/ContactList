@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/contacts
+    username: postgres
+    password: password
+    hikari:
+      schema: contacts_schema
+    driver-class-name: org.postgresql.Driver
